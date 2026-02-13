@@ -57,6 +57,11 @@ Classic optimization benchmark functions:
 # Install dependencies
 pip install -r requirements.txt
 
+# 🎬 Real-time simulations (Watch algorithms work live!)
+python real_time_simulations/gradient_descent_live.py  # Watch GD step-by-step
+python real_time_simulations/pso_live.py              # Watch particle swarm
+python real_time_simulations/compare_live.py          # Algorithm race!
+
 # Run individual algorithm simulations
 python simulations/gradient_descent_sim.py
 python simulations/genetic_algorithm_sim.py
@@ -87,15 +92,19 @@ Comprehensive documentation is available in the `docs/` folder:
 
 ```
 optimizationAlgorithms/
-├── docs/                # Comprehensive documentation
-├── algorithms/          # Algorithm implementations
+├── docs/                          # Comprehensive documentation
+├── algorithms/                    # Algorithm implementations
 │   ├── gradient_based.py          # 4 basic gradient methods
 │   ├── advanced_gradient.py       # 6 advanced gradient methods
 │   ├── metaheuristic.py           # 3 basic metaheuristics
 │   └── advanced_metaheuristic.py  # 5 advanced metaheuristics
-├── test_functions/      # Benchmark functions
-├── simulations/         # Individual simulations
-├── utils/               # Visualization and helper utilities
+├── test_functions/                # Benchmark functions
+├── real_time_simulations/         # 🎬 NEW! Watch algorithms live!
+│   ├── gradient_descent_live.py   # Real-time GD visualization
+│   ├── pso_live.py                # Real-time particle swarm
+│   └── compare_live.py            # Real-time algorithm race
+├── simulations/                   # Individual simulations
+├── utils/                         # Visualization and helper utilities
 ├── compare_algorithms.py
 ├── algorithm_comparison.py        # Compare ALL 18 algorithms
 ├── interactive_explorer.py        # Interactive GUI
